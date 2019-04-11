@@ -64,7 +64,7 @@ def heatmap():
 
 
     import ftplib
-    session = ftplib.FTP('host','usernaem','password')
+    session = ftplib.FTP('host','username','password')
     file = open(filename,'rb')                  # file to send
     session.storbinary('STOR heatfno200.php', file)     # send the file
     file.close()                                    # close file and FTP
